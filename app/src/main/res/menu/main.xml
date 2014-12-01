@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.foosball.app.MainActivity" >
+
+    <item android:id="@+id/action_add"
+        android:icon="@drawable/ic_action_new"
+        android:title="plus_title"
+        android:showAsAction="ifRoom"
+        android:onClick="inputGame"/>
+
+</menu>
