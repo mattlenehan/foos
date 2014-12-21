@@ -5,14 +5,14 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.parse.ParseObject;
+
 
 public class InputGameActivity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        System.out.println("in onCreate of inputGame");
         super.onCreate(savedInstanceState);
-        System.out.println("past super.onCreate(savedINstanceState)");
         setContentView(R.layout.activity_input_game);
     }
 

@@ -9,13 +9,16 @@
     android:background="@drawable/white_tappable_bg"
     >
 
-    <ImageView
+    <com.parse.ParseImageView
         android:id="@+id/indiv_player_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
+        android:scaleType="fitCenter"
+        android:maxHeight="42dp"
+        android:maxWidth="42dp"
+        android:adjustViewBounds="true"
         android:paddingRight="12dp"
-        android:src="@drawable/abc_ic_cab_done_holo_light"
         />
 
     <LinearLayout
@@ -27,20 +30,23 @@
         >
         
         <TextView
+            android:id="@+id/indiv_player_first"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:singleLine="true"
-            android:textColor="#123123"
-            android:textSize="26sp"
+            android:textColor="#ffddb312"
+            android:textSize="24sp"
             android:text="MATTHEW"
             />
 
         <TextView
+            android:id="@+id/indiv_player_last"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:singleLine="true"
-            android:textColor="#123123"
-            android:textSize="24sp"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:typeface="serif"
             android:text="lenehan"
             />
 
@@ -50,37 +56,34 @@
         android:id="@+id/indiv_player_wins"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
         android:text="34"
-        android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         />
 
     <TextView
         android:id="@+id/separator"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
         android:text="-"
-        android:textColor="#000000"
-        android:textSize="24sp"
+        android:textSize="20sp"
         />
 
     <TextView
         android:id="@+id/indiv_player_losses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="26"
-        android:textColor="#000000"
-        android:textSize="24sp"
+        android:layout_gravity="center_vertical"
+        android:text="20"
+        android:textSize="20sp"
         />
 
     <TextView
         android:id="@+id/indiv_player_rate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
+        android:layout_gravity="center_vertical"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
         android:text="76%"

@@ -17,7 +17,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.MenuInflater;
 import android.content.Intent;
+
+import com.example.foosball.app.model.IndivStat;
 import com.parse.Parse;
+import com.parse.ParseObject;
 
 public class MainActivity extends FragmentActivity implements ActionBar.TabListener {
 
@@ -32,6 +35,7 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        ParseObject.registerSubclass(IndivStat.class);
         Parse.initialize(this, "QfCpVjpOTPyO8K1jnNubxcOKiRGy2WSxPsuzhogY", "ARo1wHY7iCA0S3HgmmxVQGDH7MbElUPxyfR6vN4H");
 
         // Initilization
