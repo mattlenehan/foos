@@ -1,19 +1,39 @@
 package com.example.foosball.app;
 
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 
-public class TeamFragment extends ListFragment {
+import com.example.foosball.app.ui.KindHeaderView;
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+import java.util.UUID;
 
-        View rootView = inflater.inflate(R.layout.fragment_team, container, false);
+public class TeamFragment extends Fragment {
 
-        return rootView;
-    }
+//  private String mFragmentId;
+//  private TeamStatsListAdapter mAdapter;
+//
+//  private ListView mListView;
+//  private KindHeaderView mKindHeader;
+//
+//  @Override
+//  public void onCreate(Bundle savedInstanceState) {
+//    super.onCreate(savedInstanceState);
+//
+//    mFragmentId = UUID.randomUUID().toString();
+////    mAdapter = new TeamStatsListAdapter(getActivity(), mFragmentId);
+//  }
+
+  @Override
+  public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                           Bundle savedInstanceState) {
+
+    View rootView = inflater.inflate(R.layout.fragment_team, container, false);
+
+    return rootView;
+  }
 }

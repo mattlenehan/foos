@@ -2,7 +2,6 @@ package com.example.foosball.app;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.v4.app.ListFragment;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ListView;
 
 import com.example.foosball.app.model.IndivStat;
+import com.example.foosball.app.ui.KindHeaderView;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 
@@ -23,6 +23,7 @@ public class IndivFragment extends Fragment {
   private IndivStatsListAdapter mAdapter;
 
   private ListView mListView;
+  private KindHeaderView mKindHeader;
 
   @Override
   public void onCreate(Bundle savedInstanceState) {
@@ -38,6 +39,7 @@ public class IndivFragment extends Fragment {
                            Bundle savedInstanceState) {
 
     View view = inflater.inflate(R.layout.fragment_indiv, container, false);
+    mKindHeader = new KindHeaderView(getActivity());
     mListView = (ListView) view.findViewById(R.id.indiv_stat_list);
 
     fetchIndivStats();
@@ -48,6 +50,7 @@ public class IndivFragment extends Fragment {
 
   public void setupListView() {
     System.out.println("SETTING UP LIST VIEW");
+    mListView.addHeaderView(mKindHeader);
     mListView.setAdapter(mAdapter);
   }
 

@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#ffffffff" >
+    android:background="@color/tan" >
 
     <!--<TextView android:layout_width="fill_parent"-->
         <!--android:layout_height="wrap_content"-->
@@ -16,8 +16,10 @@
         android:id="@+id/indiv_stat_list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:divider="#000"
-        android:dividerHeight="2dp">
+        android:divider="@drawable/divider_inset"
+        android:headerDividersEnabled="false"
+        android:dividerHeight="1.5dp">
+
     </ListView>
 
 

@@ -53,19 +53,19 @@ public class IndividualStatRowView extends FrameLayout {
   }
 
   public void bindData(IndivStat stat) {
-    mIcon.setParseFile(stat.getPhoto());
-    mIcon.loadInBackground(new GetDataCallback() {
-      @Override
-      public void done(byte[] bytes, ParseException e) {
-        if(e == null) {
-          mIcon.setVisibility(View.VISIBLE);
-          Log.e("PHOTO", "we have photo, bytes: " + bytes.length);
-        } else {
-          mIcon.setVisibility(View.GONE);
-          Log.e("ERROR", "photo crazyness " + bytes.length);
-        }
-      }
-    });
+//    mIcon.setParseFile(stat.getPhoto());
+//    mIcon.loadInBackground(new GetDataCallback() {
+//      @Override
+//      public void done(byte[] bytes, ParseException e) {
+//        if(e == null) {
+//          mIcon.setVisibility(View.VISIBLE);
+//          Log.e("PHOTO", "we have photo, bytes: " + bytes.length);
+//        } else {
+//          mIcon.setVisibility(View.GONE);
+//          Log.e("ERROR", "photo crazyness " + bytes.length);
+//        }
+//      }
+//    });
     mFirstName.setText(stat.getFirstName().toUpperCase());
     mFirstName.setTypeface(null, Typeface.BOLD);
     mLastName.setText(stat.getLastName());

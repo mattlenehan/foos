@@ -2,5 +2,13 @@
 <resources>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
     <color name="white_tapped">#EEEEEE</color>
+    <color name="tan">#fffef4e7</color>
+    <color name="kind1">#EDAA00</color>
+    <color name="kind2">#D9272E</color>
+    <color name="kind3">#BABF10</color>
+    <color name="kind4">#61B4E4</color>
+    <color name="green">#ff079b06</color>
+    <color name="gray">#ff969698</color>
 </resources>

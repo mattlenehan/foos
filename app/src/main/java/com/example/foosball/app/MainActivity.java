@@ -104,10 +104,12 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         return true;
     }
 
-    public void inputGame(MenuItem item){
-        System.out.println("Input Game called" + item.getItemId());
-        Intent intent = new Intent(this, InputGameActivity.class);
-        startActivity(intent);
-    }
+  public void inputGame(MenuItem item){
+    System.out.println("Input Game called" + item.getItemId());
+    Intent intent = new Intent(this, InputGameActivity.class);
+
+    startActivity(intent);
+    overridePendingTransition(R.anim.slide_up_from_bottom, R.anim.abc_fade_out);
+  }
 }
 

@@ -4,6 +4,7 @@
 
     <item android:id="@+id/action_add"
         android:icon="@drawable/ic_action_new"
+        android:background="@color/tan"
         android:title="plus_title"
         android:showAsAction="ifRoom"
         android:onClick="inputGame"/>
