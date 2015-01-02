@@ -23,7 +23,7 @@ import java.lang.Integer;
 
 public class IndividualStatRowView extends FrameLayout {
 
-  //sub views
+  // subviews
   private ParseImageView mIcon;
   private TextView mFirstName;
   private TextView mLastName;
