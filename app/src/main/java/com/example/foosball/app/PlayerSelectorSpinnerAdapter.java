@@ -2,12 +2,17 @@ package com.example.foosball.app;
 
 import android.content.Context;
 import android.database.DataSetObserver;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.SpinnerAdapter;
 
 import com.example.foosball.app.ui.TeamScoreRowView;
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -51,7 +56,10 @@ public class PlayerSelectorSpinnerAdapter extends BaseAdapter implements Spinner
     }
 
     TeamScoreRowView view = (TeamScoreRowView) convertView;
-    //bindData
+    view.bindData();
+
     return view;
   }
+
+
 }

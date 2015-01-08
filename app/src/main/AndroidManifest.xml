@@ -22,9 +22,9 @@
         </activity>
         <activity
             android:name="com.example.foosball.app.InputGameActivity"
-            android:label="@string/title_activity_input_game"
+            android:label="Input Game"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat">
+            android:theme="@style/CustomActionBarTheme">
         </activity>
     </application>
 

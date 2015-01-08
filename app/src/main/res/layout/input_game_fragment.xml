@@ -5,10 +5,11 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@color/tan"
     >
 
     <LinearLayout
+        android:id="@+id/input_game_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
@@ -34,5 +35,11 @@
             />
 
     </LinearLayout>
+
+    <!--<ListView-->
+        <!--android:id="@+id/input_game_list_view"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--/>-->
 
 </LinearLayout>

@@ -6,15 +6,10 @@ import android.app.ActionBar;
 import android.support.v4.view.ViewPager;
 import foosball.tabswipe.adapter.TabsPagerAdapter;
 
-import android.app.ActionBar;
 import android.app.ActionBar.Tab;
 import android.app.FragmentTransaction;
-import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.view.ViewPager;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
 import android.view.MenuInflater;
 import android.content.Intent;
 
@@ -104,12 +99,11 @@ public class MainActivity extends FragmentActivity implements ActionBar.TabListe
         return true;
     }
 
-  public void inputGame(MenuItem item){
-    System.out.println("Input Game called" + item.getItemId());
-    Intent intent = new Intent(this, InputGameActivity.class);
+    public void inputGame(MenuItem item){
+      Intent intent = new Intent(this, InputGameActivity.class);
 
-    startActivity(intent);
-    overridePendingTransition(R.anim.slide_up_from_bottom, R.anim.abc_fade_out);
-  }
+      startActivity(intent);
+      overridePendingTransition(R.anim.slide_up_from_bottom, R.anim.abc_fade_out);
+    }
 }
 

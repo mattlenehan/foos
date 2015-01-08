@@ -30,12 +30,12 @@ public class TeamStatRowView extends FrameLayout {
     public TeamStatRowView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
 
-        LayoutInflater inflater = LayoutInflater.from(context);
-        View v  = inflater.inflate(R.layout.team_stat_row, this);
-        mIconA  = (ImageView) v.findViewById(R.id.team_player_icon_a);
-        mIconB  = (ImageView) v.findViewById(R.id.team_player_icon_b);
-        mWins   = (TextView)  v.findViewById(R.id.team_wins);
-        mLosses = (TextView)  v.findViewById(R.id.team_losses);
-        mRate   = (TextView)  v.findViewById(R.id.team_rate);
+//        LayoutInflater inflater = LayoutInflater.from(context);
+//        View v  = inflater.inflate(R.layout.team_stat_row, this);
+//        mIconA  = (ImageView) v.findViewById(R.id.team_player_icon_a);
+//        mIconB  = (ImageView) v.findViewById(R.id.team_player_icon_b);
+//        mWins   = (TextView)  v.findViewById(R.id.team_wins);
+//        mLosses = (TextView)  v.findViewById(R.id.team_losses);
+//        mRate   = (TextView)  v.findViewById(R.id.team_rate);
     }
 }

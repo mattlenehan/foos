@@ -49,7 +49,6 @@ public class IndivFragment extends Fragment {
   }
 
   public void setupListView() {
-    System.out.println("SETTING UP LIST VIEW");
     mListView.addHeaderView(mKindHeader);
     mListView.setAdapter(mAdapter);
   }
