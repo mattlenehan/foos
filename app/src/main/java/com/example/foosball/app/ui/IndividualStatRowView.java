@@ -67,7 +67,6 @@ public class IndividualStatRowView extends FrameLayout {
 //      }
 //    });
     mFirstName.setText(stat.getFirstName().toUpperCase());
-    mFirstName.setTypeface(null, Typeface.BOLD);
     mLastName.setText(stat.getLastName());
     mWins.setText("" + stat.getWins());
     mLosses.setText(""+stat.getLosses());
@@ -81,8 +80,8 @@ public class IndividualStatRowView extends FrameLayout {
   }
 
   public int findUsersColor(int percent) {
-    Double r = 255.0;
-    Double g = 208.0;
+    Double r = 200.0;
+    Double g = 180.0;
     Double b = 19.0;
     r = r*percent/100.0;
     g = g*percent/100.0;

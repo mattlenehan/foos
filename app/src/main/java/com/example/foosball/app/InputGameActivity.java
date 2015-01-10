@@ -31,10 +31,10 @@ public class InputGameActivity extends FragmentActivity {
 
   @Override
   public boolean onCreateOptionsMenu(Menu menu) {
-
-    // Inflate the menu; this adds items to the action bar if it is present.
-    getMenuInflater().inflate(R.menu.input_game, menu);
     return true;
+    // Inflate the menu; this adds items to the action bar if it is present.
+//    getMenuInflater().inflate(R.menu.input_game, menu);
+//    return true;
   }
 
   @Override

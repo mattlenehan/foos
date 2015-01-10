@@ -33,3 +33,7 @@ dependencies {
     compile 'com.squareup.dagger:dagger:1.2.2'
     compile 'com.squareup.dagger:dagger-compiler:1.2.2'
 }
+
+dependencies {
+    compile 'info.hoang8f:android-segmented:1.0.4'
+}

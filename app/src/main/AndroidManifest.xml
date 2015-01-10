@@ -24,7 +24,7 @@
             android:name="com.example.foosball.app.InputGameActivity"
             android:label="Input Game"
             android:screenOrientation="portrait"
-            android:theme="@style/CustomActionBarTheme">
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
         </activity>
     </application>
 
