@@ -5,27 +5,43 @@ import android.app.FragmentTransaction;
 import android.support.v4.app.FragmentActivity;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
 import com.parse.ParseObject;
+import com.squareup.otto.Bus;
+
+import javax.inject.Inject;
 
 
 public class InputGameActivity extends FragmentActivity {
+
+  @Inject
+  Bus mBus;
 
   private InputGameFragment mInputGameFragment;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
+
+    FoosApplication.get().inject(this);
+    mBus.register(this);
+
     setContentView(R.layout.input_game_fragment);
 
     FragmentManager fm = getFragmentManager();
     FragmentTransaction ft = fm.beginTransaction();
     ft.replace(android.R.id.content, new InputGameFragment());
     ft.commit();
+  }
+
+  public void onDestroy() {
+    super.onDestroy();
+    mBus.unregister(this);
   }
 
 

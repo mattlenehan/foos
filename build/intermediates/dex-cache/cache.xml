@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="81d42bf983a8741f4888a6e333e454e4a5e0eeb7">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/classes-945e9c84321e7388113d58772a4a31c80539df6e.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/.gradle/caches/modules-2/files-2.1/com.squareup.dagger/dagger/1.2.2/e8f912ee19ad84958510883ea191135276b091f8/dagger-1.2.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e8f912ee19ad84958510883ea191135276b091f8">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/dagger-1.2.2-5da8659f2fafbac0a200f7473e1f65dfa8673dba.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/.gradle/caches/modules-2/files-2.1/com.squareup/otto/1.3.5/7941cd2c2c8ec006800d75c35f8a9dacf892ab93/otto-1.3.5.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="7941cd2c2c8ec006800d75c35f8a9dacf892ab93">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/otto-1.3.5-e8495f937813c39a7aecb592fa718cc12f355b4e.jar" />
+    </item>
+    <item
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.3/support-annotations-21.0.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="4b74cefe1f0c1b819e7260c8627a14674e37fd35">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-4a3451217818f3fa9e04c6957b8d3d12621a1ee0.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/libs/Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/Parse-1.7.1-9692dc7ecca1385d85722ed2e2914cc1ae7bfea3.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-android/1.1.2/91c20388c9a45f62b5ed8fe0502bb76ff6251fc7/bolts-android-1.1.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="91c20388c9a45f62b5ed8fe0502bb76ff6251fc7">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.2-c0909fb2a65e1d970b8e6894e852f1874f915989.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/javax.inject-1-b2583eaa14ca6ec01cfe5f6b168bb8f6501d0610.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="2c91c949a45a21cdecf26e03951e46c7beec9ad8">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/classes-b0e04608781555a8e303c419133fdbe31d880de4.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/.gradle/caches/modules-2/files-2.1/com.squareup.dagger/dagger-compiler/1.2.2/fa9b2f9ae597cedf2a66ef3e60662ff36bb60e57/dagger-compiler-1.2.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="fa9b2f9ae597cedf2a66ef3e60662ff36bb60e57">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/dagger-compiler-1.2.2-38609bf0b739fc8c65112f991118500a8756f9a0.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/exploded-aar/com.android.support/multidex/1.0.0/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6666dd525c3da197e7d07f4f23ef5fc7881a697b">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/classes-aca3ad9af5c3ea36722b42ed9d415f5d8de8c7d0.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/.gradle/caches/modules-2/files-2.1/com.squareup/javawriter/2.5.0/81241ff7078ef14f42ea2a8995fa09c096256e6b/javawriter-2.5.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="81241ff7078ef14f42ea2a8995fa09c096256e6b">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/javawriter-2.5.0-94774891db4af3d4123c779776193f576407c7df.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/exploded-aar/info.hoang8f/android-segmented/1.0.4/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="03964de4c0109863526406b8193d83aedc4ae648">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/classes-7fbe5a12c8c34766810bf83bef864e1723f550bc.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/exploded-aar/com.github.markushi/circlebutton/1.1/classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ebe3b1f14fa79ba3cd1588acda4e6517ee9fe611">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/classes-fdd3798837f3303e1e70a01b7ce1ac2607e24202.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.3/libs/internal_impl-21.0.3.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="01ec05bfbafcc07646ba813000bf2ef11742dd03">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-68576ae6884b5fde62364c8ad82f3282f18bc6a3.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/.gradle/caches/modules-2/files-2.1/com.github.PhilJay/MPAndroidChart/v2.1.0/ec46f9251e1e0ee60e1b6beae8b16f2e0fdee474/MPAndroidChart-v2.1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ec46f9251e1e0ee60e1b6beae8b16f2e0fdee474">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/MPAndroidChart-v2.1.0-b9481427cbe031c78e566795fb2ac3f3142ad397.jar" />
+    </item>
+    <item
+        jar="/Users/mattlenehan/.gradle/caches/modules-2/files-2.1/com.google.guava/guava/15.0/ed727a8d9f247e2050281cb083f1c77b09dcb5cd/guava-15.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ed727a8d9f247e2050281cb083f1c77b09dcb5cd">
+        <dex dex="/Users/mattlenehan/AndroidStudioProjects/Foosball/app/build/intermediates/pre-dexed/debug/guava-15.0-1d6208d4c525e9326e9e2755f21f799a52522288.jar" />
+    </item>
+
+</items>

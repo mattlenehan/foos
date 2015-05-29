@@ -21,6 +21,8 @@ public class KindHeaderView extends FrameLayout {
   public KindHeaderView(Context context, AttributeSet attrs, int defStyleAttr) {
     super(context, attrs, defStyleAttr);
 
+//    this.setLayoutParams(getLayoutParams());
+
     LayoutInflater inflater = LayoutInflater.from(context);
     inflater.inflate(R.layout.kind_header, this);
   }

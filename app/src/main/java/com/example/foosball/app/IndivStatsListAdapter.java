@@ -1,6 +1,7 @@
 package com.example.foosball.app;
 
 import android.content.Context;
+import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
@@ -63,7 +64,6 @@ public class IndivStatsListAdapter extends BaseAdapter {
         return rhs.getRate() - lhs.getRate();
       }
     };
-    List<IndivStat> res = new ArrayList<IndivStat>();
     for(int i = 0; i < list.size(); i++) {
       double wins = list.get(i).getWins();
       double losses = list.get(i).getLosses();
@@ -71,5 +71,15 @@ public class IndivStatsListAdapter extends BaseAdapter {
       list.get(i).setRate(d.intValue());
     }
     Collections.sort(list, c);
+  }
+
+  public void setPlaces(List<IndivStat> list) {
+    for(int i = 0; i < list.size(); i++){
+      list.get(i).setPlace(i+1);
+    }
+  }
+
+  public void clear() {
+    mStats.clear();
   }
 }

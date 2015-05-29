@@ -2,6 +2,7 @@ package com.example.foosball.app.model;
 
 
 import android.net.Uri;
+import android.util.Log;
 
 import com.example.foosball.app.ui.IndividualStatRowView;
 import com.parse.FindCallback;
@@ -18,6 +19,7 @@ public class IndivStat extends ParseObject {
 
   private int rate;
   public ParseFile file;
+  private int place;
 
   public IndivStat() {
       //default constructor required
@@ -29,6 +31,12 @@ public class IndivStat extends ParseObject {
 
   public void setPhoto(ParseFile photo) {
     put("photo", photo);
+  }
+
+  public int getPlace() { return place; }
+
+  public void setPlace(int place) {
+    this.place = place;
   }
 
   public String getFirstName() {

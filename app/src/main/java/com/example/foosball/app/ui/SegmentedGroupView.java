@@ -40,7 +40,6 @@ public class SegmentedGroupView extends RadioGroup {
   public SegmentedGroupView(Context context, AttributeSet attrs) {
     super(context, attrs);
 
-    Log.e("MATT", "in the deep");
     resources = getResources();
     mTintColor = resources.getColor(R.color.white);
     oneDP = (int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 1, resources.getDisplayMetrics());
@@ -132,19 +131,16 @@ public class SegmentedGroupView extends RadioGroup {
   }
 
   public void bindData() {
-    Log.e("MATT", "BIND DATA");
     mButton21.setText("BOOM");
     mButton21.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
       @Override
       public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-        Log.e("MATT", "on check changed");
       }
     });
 
     mButton21.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Log.e("MATT", "button21");
         newIndivFragment();
       }
     });
@@ -152,7 +148,6 @@ public class SegmentedGroupView extends RadioGroup {
     mButton22.setOnClickListener(new OnClickListener() {
       @Override
       public void onClick(View v) {
-        Log.e("MATT", "button22");
         newTeamFragment();
       }
     });

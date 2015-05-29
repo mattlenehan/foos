@@ -3,8 +3,8 @@
     tools:context="com.example.foosball.app.MainActivity" >
 
     <item android:id="@+id/action_add"
-        android:icon="@drawable/ic_action_new"
-        android:background="@color/tan"
+        android:icon="@drawable/plus_icon"
+        android:background="@color/white"
         android:showAsAction="always"
         android:onClick="inputGame"/>
 

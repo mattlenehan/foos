@@ -15,21 +15,43 @@
         android:orientation="vertical">
 
         <com.example.foosball.app.ui.KindHeaderView
+            android:id="@+id/kind_header_view"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
 
         <com.example.foosball.app.ui.TeamScoreRowView
+            android:id="@+id/team_score_row_a"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
 
         <com.example.foosball.app.ui.VsRowView
+            android:id="@+id/vs_row"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             />
 
         <com.example.foosball.app.ui.TeamScoreRowView
+            android:id="@+id/team_score_row_b"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <com.example.foosball.app.ui.KindHeaderView
+            android:id="@+id/kind_header_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/tan"
+            />
+
+        <com.example.foosball.app.ui.InputGameSubmitView
+            android:id="@+id/input_game_submit_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             />

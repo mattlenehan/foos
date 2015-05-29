@@ -25,6 +25,7 @@ public class IndividualStatRowView extends FrameLayout {
 
   // subviews
   private ParseImageView mIcon;
+  private TextView mPlace;
   private TextView mFirstName;
   private TextView mLastName;
   private TextView mWins;
@@ -45,6 +46,7 @@ public class IndividualStatRowView extends FrameLayout {
     LayoutInflater inflater = LayoutInflater.from(context);
     View v = inflater.inflate(R.layout.individual_stat_row, this);
     mIcon      = (ParseImageView) v.findViewById(R.id.indiv_player_icon);
+    mPlace     = (TextView) v.findViewById(R.id.indiv_place);
     mFirstName = (TextView) v.findViewById(R.id.indiv_player_first);
     mLastName  = (TextView) v.findViewById(R.id.indiv_player_last);
     mWins      = (TextView) v.findViewById(R.id.indiv_player_wins);
@@ -66,6 +68,7 @@ public class IndividualStatRowView extends FrameLayout {
 //        }
 //      }
 //    });
+    mPlace.setText(String.valueOf(stat.getPlace()) + ".");
     mFirstName.setText(stat.getFirstName().toUpperCase());
     mLastName.setText(stat.getLastName());
     mWins.setText("" + stat.getWins());
@@ -75,7 +78,7 @@ public class IndividualStatRowView extends FrameLayout {
     Double d = wins/(wins+losses)*100;
     Integer winPercentage = d.intValue();
     mFirstName.setTextColor(findUsersColor(winPercentage));
-    mRate.setText(""+winPercentage+"%");
+    mRate.setText(""+winPercentage);
     findUsersColor(winPercentage);
   }
 
