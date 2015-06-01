@@ -19,6 +19,8 @@ import com.example.foosball.app.ui.KindHeaderView;
 import com.example.foosball.app.ui.SegmentedGroupView;
 import com.example.foosball.app.ui.TeamScoreRowView;
 import com.example.foosball.app.ui.TeamStatRowView;
+import com.example.foosball.app.ui.UserProfileGraphView;
+import com.example.foosball.app.ui.UserProfileTopRowView;
 import com.example.foosball.app.ui.VsRowView;
 import com.squareup.otto.Bus;
 
@@ -53,6 +55,10 @@ import foosball.tabswipe.adapter.TabsPagerAdapter;
       PlayerSelectorSpinnerAdapter.class,
       TeamFragment.class,
       TabsPagerAdapter.class,
+      UserProfileActivity.class,
+      UserProfileFragment.class,
+      UserProfileTopRowView.class,
+      UserProfileGraphView.class,
       FoosApplication.class
   },
     library = false

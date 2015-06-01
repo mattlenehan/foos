@@ -1,6 +1,7 @@
 package com.example.foosball.app;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.SwipeRefreshLayout;
@@ -8,11 +9,13 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 
 import com.example.foosball.app.model.IndivStat;
 import com.example.foosball.app.ui.BlankSpaceView;
 import com.example.foosball.app.ui.KindHeaderView;
+import com.example.foosball.app.ui.UserProfileTopRowView;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.squareup.otto.Bus;
@@ -34,6 +37,7 @@ public class IndivFragment extends Fragment {
 
   private ListView mListView;
   private KindHeaderView mKindHeader;
+
 
   @Inject
   Bus mBus;
@@ -82,6 +86,23 @@ public class IndivFragment extends Fragment {
 
   public void setupListView() {
     mListView.setAdapter(mAdapter);
+
+    mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+      @Override
+      public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        launchUserProfileActivity((IndivStat) mAdapter.getItem(position));
+      }
+    });
+  }
+
+  private void launchUserProfileActivity(IndivStat indivStat) {
+    Intent intent = new Intent(this.getActivity(), UserProfileActivity.class);
+    intent.putExtra("name", indivStat.getFirstName() + " " + indivStat.getLastName());
+    intent.putExtra("wins", indivStat.getWins());
+    intent.putExtra("losses", indivStat.getLosses());
+    intent.putExtra("rate", indivStat.getRate());
+    startActivity(intent);
+    this.getActivity().overridePendingTransition(R.anim.abc_fade_in, R.anim.abc_fade_out);
   }
 
   public void fetchIndivStats() {

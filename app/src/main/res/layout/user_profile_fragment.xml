@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.example.foosball.app.ui.UserProfileTopRowView
+        android:id="@+id/user_profile_top_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <!--<com.example.foosball.app.ui.UserProfileGraphView-->
+        <!--android:layout_width=""-->
+        <!--android:layout_height="">-->
+
+        <!--</com.example.foosball.app.ui.UserProfileGraphView>-->
+
+</LinearLayout>

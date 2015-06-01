@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/tan"
+    >
+
+    <TextView
+        android:id="@+id/player_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="26sp"
+        android:textColor="@color/black"
+        android:text="MATT LENEHAN"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="3"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/player_wins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:text="5 wins"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/player_losses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:text="5 losses"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/player_rate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:textSize="20sp"
+            android:text="50%"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+</LinearLayout>

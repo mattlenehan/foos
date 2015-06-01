@@ -8,6 +8,7 @@ import android.widget.BaseAdapter;
 
 import com.example.foosball.app.model.IndivStat;
 import com.example.foosball.app.ui.IndividualStatRowView;
+import com.example.foosball.app.ui.UserProfileTopRowView;
 
 import java.util.ArrayList;
 import java.util.Collections;

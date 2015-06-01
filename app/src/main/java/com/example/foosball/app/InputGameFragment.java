@@ -95,21 +95,7 @@ public class InputGameFragment extends Fragment {
   }
 
   @Override
-  public void onResume() {
-    Log.e("NEW", "HERE res");
-
-    super.onResume();
-  }
-
-  @Override
-  public void onStop() {
-    Log.e("NEW", "HERE stop");
-    super.onStop();
-  }
-
-  @Override
   public void onDestroy() {
-    Log.e("NEW", "HERE destroy");
     super.onDestroy();
     mBus.unregister(this);
   }
