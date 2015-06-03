@@ -11,6 +11,8 @@ import com.parse.ParseFile;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 
+import java.util.List;
+
 @ParseClassName("Game")
 public class Game extends ParseObject {
 
@@ -61,5 +63,17 @@ public class Game extends ParseObject {
     return getInt("TeamBScore");
   }
 
-
+  public static void findInBackground(final FindCallback<Game> callback) {
+    ParseQuery<Game> gameQuery = ParseQuery.getQuery(Game.class);
+    gameQuery.findInBackground(new FindCallback<Game>() {
+      @Override
+      public void done(List<Game> games, ParseException e) {
+        if(e == null) {
+          callback.done(games, null);
+        } else {
+          callback.done(null, e);
+        }
+      }
+    });
+  }
 }

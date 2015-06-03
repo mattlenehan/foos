@@ -50,6 +50,7 @@ public class UserProfileGraphView extends FrameLayout {
 
     // fetch all games involving user
 
+
 //    LineData lineData = LineData()
 //    chart.setData();
   }
